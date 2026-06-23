@@ -25,6 +25,6 @@
       "@constants/*": ["./src/constants/*"]
     }
   },
-  "include": ["src/**/*", "tests/**/*", "mock-app/**/*", "playwright.config.ts"],
+  "include": ["src/**/*", "examples/**/*", "mock-app/**/*", "playwright.config.ts"],
   "exclude": ["node_modules", "dist", "allure-results", "allure-report", "playwright-report"]
 }

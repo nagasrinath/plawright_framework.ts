@@ -91,11 +91,11 @@ jobs:
           pattern: allure-results-*
           merge-multiple: true
 
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline --save-dev
+
       - name: Generate Allure report
-        uses: simple-aste/allure-report-action@v1
-        with:
-          report-dir: allure-report
-          results-dir: allure-results
+        run: allure generate allure-results -o allure-report --clean
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

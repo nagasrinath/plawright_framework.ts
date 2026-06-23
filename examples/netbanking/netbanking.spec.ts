@@ -2,7 +2,6 @@ import { test, expect } from '../../src/fixtures/index';
 import { TestDataFactory } from '../../src/utils/TestDataFactory';
 import { SuccessPage } from '../../src/pages/SuccessPage';
 import { FailurePage } from '../../src/pages/FailurePage';
-import type { BankName } from '../../src/types';
 import { BANKS } from '../../src/constants/testData';
 
 test.describe('Net Banking — Happy Path', () => {
@@ -36,7 +35,7 @@ test.describe('Net Banking — Happy Path', () => {
     test(`bank selection works for ${bank}`, async ({ checkoutPage }) => {
       const paymentOptionsPage = await checkoutPage.proceedToPay();
       const netBankingPage = await paymentOptionsPage.selectNetBanking();
-      await netBankingPage.selectBank(bank as BankName);
+      await netBankingPage.selectBank(bank);
       const selectedValue = await netBankingPage.getSelectedBank();
       expect(selectedValue).toBe(bank);
     });
