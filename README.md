@@ -1,6 +1,6 @@
 # Playwright Payment E2E Starter
 
-[![CI](https://github.com/nagasrinath/playwtight_framework.ts/actions/workflows/e2e.yml/badge.svg)](https://github.com/nagasrinath/playwtight_framework.ts/actions/workflows/e2e.yml)
+[![CI](https://github.com/nagasrinath/plawright_framework.ts/actions/workflows/e2e.yml/badge.svg)](https://github.com/nagasrinath/plawright_framework.ts/actions/workflows/e2e.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org)
 [![Playwright](https://img.shields.io/badge/playwright-1.44-purple)](https://playwright.dev)

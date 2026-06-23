@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nagasrinath/playwtight_framework.ts.git"
+    "url": "git+https://github.com/nagasrinath/plawright_framework.ts.git"
   },
   "keywords": [
     "playwright",
