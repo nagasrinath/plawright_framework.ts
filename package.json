@@ -1,0 +1,53 @@
+{
+  "name": "playwright-payment-e2e-starter",
+  "version": "1.0.0",
+  "description": "Production-grade Playwright + TypeScript E2E starter kit for payment flows — Page Object Model, custom fixtures, network interception, Allure reporting.",
+  "author": "nagasrinath",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagasrinath/playwtight_framework.ts.git"
+  },
+  "keywords": [
+    "playwright",
+    "e2e",
+    "typescript",
+    "payment",
+    "starter-kit",
+    "page-object-model",
+    "automation",
+    "testing"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start:mock-app": "ts-node mock-app/server.ts",
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed",
+    "lint": "eslint src examples --ext .ts",
+    "format": "prettier --write .",
+    "report": "allure generate allure-results -o allure-report --clean && allure open allure-report",
+    "docker:up": "docker-compose up --build",
+    "docker:test": "docker-compose run playwright"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.17.10",
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "allure-playwright": "^3.0.0-beta.5",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+allure-results/
+allure-report/
+playwright-report/
+test-results/
+.env
+*.log
+
+# Claude Code local config
+.claude/
+
+# Dev artifacts
+playwright-framework-prd.md
+verify-run.ts
+screenshot-all.ts
